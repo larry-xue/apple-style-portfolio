@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/inter';
 import '@fontsource/source-sans-pro';
+import PromoBanner from '../components/PromoBanner.astro';
 
 interface Props {
   title: string;
@@ -24,6 +25,7 @@ const {
     <title>{title}</title>
   </head>
   <body class="bg-apple-gray-50 text-apple-gray-500">
+    <PromoBanner />
     <slot />
   </body>
 </html>

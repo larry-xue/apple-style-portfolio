@@ -1,0 +1,80 @@
+---
+// Get current path to highlight the link differently on the template purchase page
+const pathname = new URL(Astro.request.url).pathname;
+const isTemplatePage = pathname.includes('purchase') || pathname.includes('pricing');
+---
+
+<style>
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+
+  .banner-content {
+    animation: float 3s ease-in-out forwards;
+  }
+
+  .banner-text {
+    animation: blink 2s ease-in-out forwards;
+  }
+
+  @media (max-width: 640px) {
+    .banner-content {
+      animation: none;
+      transform: none;
+    }
+    
+    .banner-text {
+      animation: none;
+      opacity: 1;
+    }
+  }
+</style>
+
+<div id="promo-banner" class="bg-gradient-to-r from-indigo-600 to-pink-600 text-white py-2 px-4 shadow-md mb-6 transition-all duration-300">
+  <div class="container mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center banner-content">
+      <span class="inline-block mr-2 wiggle-hover text-lg sm:text-xl">⭐</span>
+      <p class="text-xs sm:text-sm font-comic banner-text text-center sm:text-left">
+        Just launched: A meme-inspired portfolio template that's actually wholesome!
+      </p>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="flex space-x-2">
+        <a 
+          href="https://wholesome-portfolio.larryxue.dev" 
+          target="_blank"
+          class={`text-xs px-3 py-1 rounded-full font-comic font-bold transition-all ${isTemplatePage ? 'bg-white text-pink-600' : 'bg-indigo-700 hover:bg-indigo-800 text-white'}`}
+        >
+          Get it now!
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('promo-banner');
+    
+    // Handle hover effect
+    if (banner) {
+      banner.addEventListener('mouseenter', () => {
+        banner.classList.add('from-indigo-500', 'to-pink-500');
+        banner.classList.remove('from-indigo-600', 'to-pink-600');
+      });
+      
+      banner.addEventListener('mouseleave', () => {
+        banner.classList.add('from-indigo-600', 'to-pink-600');
+        banner.classList.remove('from-indigo-500', 'to-pink-500');
+      });
+    }
+  });
+</script> 
