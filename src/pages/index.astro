@@ -45,37 +45,37 @@ import TestimonialsWidget from '../components/TestimonialsWidget.astro'
 </Layout>
 
 <script>
-  import { gsap } from 'gsap'
-  import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  // import { gsap } from 'gsap'
+  // import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-  gsap.registerPlugin(ScrollTrigger)
+  // gsap.registerPlugin(ScrollTrigger)
 
-  // Animate widgets on scroll
-  // Animate white background widgets
-  gsap.utils.toArray('.bg-white\\/80').forEach((widget: any) => {
-    gsap.from(widget, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: widget,
-        start: 'top bottom-=100',
-        toggleActions: 'play none none reverse',
-      },
-    })
-  })
+  // // Animate widgets on scroll
+  // // Animate white background widgets
+  // gsap.utils.toArray('.bg-white\\/80').forEach((widget: any) => {
+  //   gsap.from(widget, {
+  //     y: 50,
+  //     opacity: 0,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: widget,
+  //       start: 'top bottom-=100',
+  //       toggleActions: 'play none none reverse',
+  //     },
+  //   })
+  // })
 
-  // Animate achievements widget
-  gsap.utils.toArray('.bg-gradient-to-r').forEach((widget: any) => {
-    gsap.from(widget, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: widget,
-        start: 'top bottom-=100',
-        toggleActions: 'play none none reverse',
-      },
-    })
-  })
+  // // Animate achievements widget
+  // gsap.utils.toArray('.bg-gradient-to-r').forEach((widget: any) => {
+  //   gsap.from(widget, {
+  //     y: 50,
+  //     opacity: 0,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: widget,
+  //       start: 'top bottom-=100',
+  //       toggleActions: 'play none none reverse',
+  //     },
+  //   })
+  // })
 </script>
