@@ -18,6 +18,15 @@ If you find this project helpful, please consider giving it a star ⭐️.
 - 🎬 Three.js integration for 3D elements
 - ⚛️ React components integration
 
+## 💼 Commercial Use
+
+This template is **MIT** — use it for client work, invoice for it, ship it. No strings, no gated "pro" version.
+
+If you're shipping paid projects on it, there are three ways to support the work: a one-time
+**$75 commercial sponsorship**, a **$199 ship-assist** if you're stuck, and a **$499/yr agency plan**.
+
+**→ [Commercial use & support](./COMMERCIAL.md)**
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -119,3 +128,5 @@ npm run preview
 ## License
 
 MIT License
+
+Using it commercially? See [COMMERCIAL.md](./COMMERCIAL.md) — MIT means you owe nothing, but there is a button if you'd rather not.
