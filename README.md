@@ -38,6 +38,7 @@ If you're shipping paid projects on it, there are three ways to support the work
   - [Deploy with Vercel](#deploy-with-vercel)
   - [Deploy with Cloudflare Pages](#deploy-with-cloudflare-pages)
 - [Tech Stack](#tech-stack)
+- [More Astro templates](#more-astro-templates)
 - [License](#license)
 
 ## Getting Started
@@ -124,6 +125,15 @@ npm run preview
 - [Three.js](https://threejs.org)
 - [Inter Font](https://rsms.me/inter)
 - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+
+## More Astro templates
+
+- **[Astroloop](https://github.com/lx-themes/astroloop)** — a landing page for AI agent products: an agent-loop diagram with a human handoff gate, and a per-tool permission matrix. [Demo](https://astroloop.larryxue.dev)
+- [Astro Sassify](https://github.com/larry-xue/astro-sassify-template) — a SaaS landing page with a full design system, dark mode and view transitions. [Demo](https://astro-sassify.larryxue.dev/)
+- [Astro Zen Blog](https://github.com/larry-xue/astro-zen-blog) — a minimal blog, with typography tuned for long-form reading. [Demo](https://astro-zen-blog.larryxue.dev/)
+- [Quiet Bar](https://github.com/larry-xue/quiet-bar) — a one-pager for a bar or restaurant. No CSS framework, no JavaScript libraries. [Demo](https://quiet-bar-theme.larryxue.dev)
+
+All MIT, all free for commercial use.
 
 ## License
 

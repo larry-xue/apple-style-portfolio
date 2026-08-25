@@ -37,6 +37,7 @@
   - [使用 Vercel 部署](#使用-vercel-部署)
   - [使用 Cloudflare Pages 部署](#使用-cloudflare-pages-部署)
 - [技术栈](#技术栈)
+- [其他 Astro 模板](#其他-astro-模板)
 - [许可证](#许可证)
 
 ## 快速开始
@@ -123,6 +124,15 @@ npm run preview
 - [Three.js](https://threejs.org)
 - [Inter Font](https://rsms.me/inter)
 - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+
+## 其他 Astro 模板
+
+- **[Astroloop](https://github.com/lx-themes/astroloop)** —— 面向 AI agent 产品的落地页：带人工闸门的 agent loop 流程图，以及逐工具的权限矩阵。[Demo](https://astroloop.larryxue.dev)
+- [Astro Sassify](https://github.com/larry-xue/astro-sassify-template) —— SaaS 落地页，完整设计系统、暗色模式与视图过渡。[Demo](https://astro-sassify.larryxue.dev/)
+- [Astro Zen Blog](https://github.com/larry-xue/astro-zen-blog) —— 极简博客，排版针对长文阅读调过。[Demo](https://astro-zen-blog.larryxue.dev/)
+- [Quiet Bar](https://github.com/larry-xue/quiet-bar) —— 酒吧 / 餐厅单页。无 CSS 框架，无 JS 库。[Demo](https://quiet-bar-theme.larryxue.dev)
+
+全部 MIT，均可商用。
 
 ## 许可证
 
